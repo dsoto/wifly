@@ -21,9 +21,9 @@ void setup() {
 int value=0;
 
 void loop() {
-  delay(10000);
+  delay(60 * 1000 * 5);
 
-  value++;
+  value = analogRead(0);
   
   // create data payload
   sprintf(packet, "time_stamp=2000-01-01T12:00&tag=ardfly&value=%d",value);
