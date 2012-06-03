@@ -51,6 +51,7 @@ while 1:
     time.sleep(delay)
     reply = get_reply(s)
     send_command('open 50.56.226.226 80\r\n')
+    time.sleep(delay)
     reply = get_reply(s)
     if '*OPEN*' in reply:
         print 'connected to server'
